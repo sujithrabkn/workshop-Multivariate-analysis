@@ -73,6 +73,12 @@ sns.boxplot(x=df['Price'],y=df['Duration'],data=df)
 sns.displot(df,x="Source",hue="Route")
 
 sns.displot(df,x="Airline",hue="Destination")
+
+## Multiveriate
+
+df.corr()
+
+sns.heatmap(df.corr(),annot=True)
 ```
 # OUTPUT:
 
@@ -125,6 +131,12 @@ sns.displot(df,x="Airline",hue="Destination")
 ![Screenshot 2023-04-05 201726](https://user-images.githubusercontent.com/119477857/230131833-0812a627-4ee3-49b8-91b2-5f80513c296a.png)
 
 ![Screenshot 2023-04-05 201809](https://user-images.githubusercontent.com/119477857/230131876-94f0fc89-1268-41cf-ad87-8cfe8427975e.png)
+
+## MULTIVERIATE:
+
+![Screenshot 2023-04-05 211522](https://user-images.githubusercontent.com/119477857/230135043-3617f860-8545-4fcb-8ec3-12c8ba3f6312.png)
+
+![Screenshot 2023-04-05 211537](https://user-images.githubusercontent.com/119477857/230135105-c1bc0065-06a9-46f5-9f2b-8d243c44aab1.png)
 
 # RESULT
 Thus the Bivariate and Multivariate analysis is observerd for the given data set.
